@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebook: JOM BAWA BISNES OFFLINE KE ONLINE - Panduan Mudah untuk Usahawan</title>
+    <meta name="description" content="Bisnes offline anda buntu? Dapatkan ebook 'JOM BAWA BISNES OFFLINE KE ONLINE' oleh Hanafi Hassan. Panduan mudah & praktikal untuk usahawan PKS kuasai Google, media sosial & Shopee. Tingkatkan jualan anda hari ini!">
+    <meta name="keywords" content="bisnes offline ke online, panduan bisnes online, cara bawa bisnes ke online, belajar bisnes online untuk usahawan, strategi bisnes online PKS, digital marketing untuk usahawan, ebook bisnes online Malaysia, kembangkan perniagaan online, usahawan buntu bisnes online">
+    <link rel="canonical" href="https://yourwebsite.com/ebook-jom-bisnes-online">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/ebook-jom-bisnes-online">
+    <meta property="og:title" content="Ebook: JOM BAWA BISNES OFFLINE KE ONLINE - Panduan Mudah untuk Usahawan">
+    <meta property="og:description" content="Panduan langkah demi langkah untuk usahawan membawa bisnes offline ke online. Tingkatkan jualan, capai pelanggan baru, dan kuasai dunia digital bersama Hanafi Hassan.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/xhanafix/ebook-jom-digital/main/images/Black%20White%20Simple%20Blogging%20Guide%20for%20Beginners%20Wattpad%20Book%20Cover.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourwebsite.com/ebook-jom-bisnes-online">
+    <meta property="twitter:title" content="Ebook: JOM BAWA BISNES OFFLINE KE ONLINE - Panduan Mudah untuk Usahawan">
+    <meta property="twitter:description" content="Panduan langkah demi langkah untuk usahawan membawa bisnes offline ke online. Tingkatkan jualan, capai pelanggan baru, dan kuasai dunia digital bersama Hanafi Hassan.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/xhanafix/ebook-jom-digital/main/images/Black%20White%20Simple%20Blogging%20Guide%20for%20Beginners%20Wattpad%20Book%20Cover.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <style>
+        /* Custom CSS - for unique visuals and subtle animations */
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Modern, inviting gradient */
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239e7cb2' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .cta-button {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Ebook mockup styling for a modern 3D look */
+        .ebook-mockup-container {
+            perspective: 1500px;
+        }
+        .ebook-mockup {
+            transform: rotateY(-10deg) rotateX(5deg) scale(1.05); /* Initial 3D tilt */
+            transform-style: preserve-3d;
+            transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            z-index: 10;
+        }
+        .ebook-mockup:hover {
+            transform: rotateY(0deg) rotateX(0deg) scale(1.0); /* Straighten on hover */
+        }
+        .ebook-front {
+            background-image: url('https://raw.githubusercontent.com/xhanafix/ebook-jom-digital/main/images/Black%20White%20Simple%20Blogging%20Guide%20for%20Beginners%20Wattpad%20Book%20Cover.jpg');
+            background-size: contain; /* Ensures the whole image is visible */
+            background-repeat: no-repeat; /* Prevents image from repeating */
+            background-position: center;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            position: relative;
+            z-index: 10;
+            backface-visibility: hidden; /* Ensure only front is visible */
+        }
+        .ebook-side {
+            background: linear-gradient(to right, #5a67d8, #7c4dff); /* Gradient for spine */
+            width: 25px; /* Thicker spine */
+            height: 100%;
+            position: absolute;
+            right: -25px;
+            top: 0;
+            transform: rotateY(90deg) translateZ(12.5px); /* Adjusted for thickness */
+            transform-origin: left;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+        }
+        .ebook-bottom {
+            background: linear-gradient(to bottom, #5a67d8, #7c4dff); /* Gradient for bottom */
+            height: 25px; /* Thicker bottom */
+            width: calc(100% + 25px); /* Matches spine width */
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            transform: rotateX(90deg) translateZ(12.5px); /* Adjusted for thickness */
+            transform-origin: top;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .ebook-mockup {
+                transform: none; /* Remove 3D transform on smaller screens for better readability */
+                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            }
+            .ebook-mockup:hover {
+                transform: none;
+            }
+            .ebook-side, .ebook-bottom {
+                display: none; /* Hide 3D elements on mobile for simplicity */
+            }
+            .ebook-front {
+                border-radius: 8px;
+            }
+        }
+        
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Tailwind custom animation definitions for pulses */
+        @keyframes pulse-light {
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 0.4; }
+        }
+        @keyframes pulse-cta {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        .animate-pulse-light {
+            animation: pulse-light 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        .animate-pulse-cta {
+            animation: pulse-cta 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-800">
+
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-16 md:py-24 relative">
+        <div class="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between relative z-10">
+            <div class="text-center md:text-left md:w-1/2 mb-10 md:mb-0">
+                <!-- Pra-tajuk/Hook -->
+                <p class="text-yellow-300 text-lg md:text-xl mb-3 font-semibold uppercase tracking-wide">
+                    Rasa buntu dengan bisnes offline anda?
+                </p>
+                <!-- Tajuk Utama -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-5 drop-shadow-lg">
+                    "JOM BAWA BISNES OFFLINE KE ONLINE":<br><span class="text-yellow-200">Panduan Mudah Usahawan Kuasai Dunia Digital!</span>
+                </h1>
+                <!-- Sub-Tajuk -->
+                <p class="text-xl md:text-2xl font-light opacity-90 mb-8 max-w-lg mx-auto md:mx-0">
+                    Kembangkan perniagaan anda, capai jutaan pelanggan baru & tingkatkan jualan dengan strategi terbukti dari usahawan sebenar.
+                </p>
+                <!-- Main CTA (prominent here as well) -->
+                <a href="https://shopee.com.my/your-ebook-link-here" target="_blank" rel="noopener noreferrer" class="cta-button inline-block bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-extrabold text-xl py-4 px-8 rounded-full shadow-lg transform animate-pulse-cta">
+                    KLIK UNTUK PEMBELIAN HANYA RM10!
+                </a>
+                <p class="mt-4 text-sm opacity-80">
+                    Dapatkan akses segera kepada panduan lengkap ini.
+                </p>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end relative ebook-mockup-container">
+                <!-- Ebook Mockup -->
+                <div class="ebook-mockup w-[280px] h-[280px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px] relative">
+                    <div class="ebook-front w-full h-full absolute top-0 left-0"></div>
+                    <div class="ebook-side"></div>
+                    <div class="ebook-bottom"></div>
+                    <img src="https://raw.githubusercontent.com/xhanafix/ebook-jom-digital/main/images/Black%20White%20Simple%20Blogging%20Guide%20for%20Beginners%20Wattpad%20Book%20Cover.jpg" alt="Cover Ebook JOM BAWA BISNES OFFLINE KE ONLINE" class="absolute inset-0 w-full h-full opacity-0 -z-10" loading="lazy">
+                </div>
+                <!-- Subtle digital elements -->
+                <div class="absolute -top-10 -left-10 w-24 h-24 bg-white bg-opacity-10 rounded-full animate-pulse-light hidden md:block"></div>
+                <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-white bg-opacity-10 rounded-full animate-pulse-light hidden md:block" style="animation-delay: 1.5s;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pernyataan Masalah (Problem Statement) -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 text-center max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+                Adakah Ini <span class="text-indigo-600">Masalah Utama</span> Anda Sekarang?
+            </h2>
+            <div class="space-y-6 text-lg text-gray-700">
+                <p class="flex items-start">
+                    <i class="fi fi-rr-stop text-indigo-600 text-2xl mr-3 mt-1 flex-shrink-0"></i>
+                    <span><strong class="text-indigo-600">Perniagaan offline anda rasa "tersekat"</strong>, dan pelanggan semakin beralih membeli secara online, tapi anda tak tahu cara nak jangkau mereka?</span>
+                </p>
+                <p class="flex items-start">
+                    <i class="fi fi-rr-interrogation text-indigo-600 text-2xl mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Anda <strong class="text-indigo-600">buntu bagaimana nak mulakan bisnes di dunia digital</strong>, rasa ragu-ragu dan tak tahu nak manfaatkan potensi online yang luas?</span>
+                </p>
+                <p class="flex items-start">
+                    <i class="fi fi-rr-exclamation text-indigo-600 text-2xl mr-3 mt-1 flex-shrink-0"></i>
+                    <span><strong class="text-indigo-600">Takutkan kerumitan teknologi</strong>, dan tak nak buang masa atau wang untuk percubaan dan kesilapan yang mahal?</span>
+                </p>
+                <p class="font-semibold text-xl mt-8">
+                    Jika ya, anda tidak keseorangan. Ramai usahawan PKS mengalami kekecewaan yang sama.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Penyelesaian / Gambaran Keseluruhan Produk (Solution/Product Overview) -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-indigo-700 mb-8">
+                Memperkenalkan <span class="text-purple-600">Penyelesaian</span> Yang Anda Cari...
+            </h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="https://github.com/xhanafix/ebook-jom-digital/blob/main/images/Google_AI_Studio_2025-08-26T08_25_22.199Z.png?raw=true" alt="Ilustrasi Transformasi Bisnes Digital" class="rounded-lg shadow-xl mb-6 md:mb-0 w-full object-contain" loading="lazy">
+                </div>
+                <div class="md:w-1/2 text-left space-y-5">
+                    <p class="text-lg text-gray-700">
+                        Kami faham cabaran anda. Sebab itulah, <strong class="text-indigo-600">Hanafi Hassan, seorang usahawan berpengalaman yang pernah melalui fasa "buntu" yang sama</strong>, telah menulis sebuah panduan khas untuk anda:
+                    </p>
+                    <h3 class="text-2xl md:text-3xl font-extrabold text-gray-900 leading-snug">
+                        Ebook: <span class="text-purple-600">"JOM BAWA BISNES OFFLINE KE ONLINE: PANDUAN MUDAH UNTUK USAHAWAN"</span>
+                    </h3>
+                    <p class="text-lg text-gray-700">
+                        Ebook ini bukan sekadar teori, tetapi <strong class="text-indigo-600">peta jalan langkah demi langkah yang praktikal</strong>, membimbing anda dari sifar hingga mahir untuk mengembangkan perniagaan offline anda ke alam digital dengan yakin dan berkesan.
+                    </p>
+                    <p class="text-lg text-gray-700 font-semibold">
+                        Sedia untuk transformasi perniagaan anda?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seksyen Manfaat (Benefits Section) -->
+    <section class="py-16 bg-indigo-50">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-indigo-800 mb-12">
+                Apa Yang Anda Akan Nikmati Apabila Bisnes Anda <span class="text-purple-600">#OnlineReady</span>!
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Benefit 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-5xl text-purple-600 mb-4">🌍</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bawa Bisnes Anda Ke Tahap Global</h3>
+                    <p class="text-gray-700">
+                        Temui cara mudah untuk mengembangkan jangkauan perniagaan anda kepada jutaan pelanggan baru di alam maya. Tiada lagi batasan geografi!
+                    </p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-5xl text-purple-600 mb-4">📈</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Tingkatkan Pendapatan & Jualan Anda</h3>
+                    <p class="text-gray-700">
+                        Pelajari strategi terbukti untuk menarik lebih ramai pelanggan dan menukarkan minat mereka kepada jualan yang menguntungkan secara konsisten.
+                    </p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-5xl text-purple-600 mb-4">💡</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Panduan Praktikal, Bukan Sekadar Teori</h3>
+                    <p class="text-gray-700">
+                        Dapatkan langkah demi langkah yang boleh anda terus laksanakan, tanpa pening kepala dengan istilah teknikal atau konsep yang rumit.
+                    </p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-5xl text-purple-600 mb-4">⏱️</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Jimat Masa & Elakkan Kesilapan Mahal</h3>
+                    <p class="text-gray-700">
+                        Manfaatkan pengalaman usahawan sebenar untuk mengelakkan percubaan dan kesilapan yang memakan masa dan kos yang tidak perlu.
+                    </p>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-5xl text-purple-600 mb-4">🌟</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bina Jenama Kukuh & Dipercayai Online</h3>
+                    <p class="text-gray-700">
+                        Fahami cara membina kehadiran digital yang profesional dan berinteraksi dengan pelanggan untuk membina kesetiaan jangka panjang.
+                    </p>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-5xl text-purple-600 mb-4">✅</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Hilangkan Rasa Buntu & Takut Teknologi</h3>
+                    <p class="text-gray-700">
+                        Dapatkan keyakinan dan hala tuju yang jelas untuk menguasai dunia digital dengan panduan yang mesra pengguna. Anda pasti boleh!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seksyen Ciri-ciri (Features Section) -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                Mengapa Ebook Ini <span class="text-indigo-600">Sangat Berbeza & Berkesan?</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+
+                <!-- Feature 1 -->
+                <div class="flex items-start bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="flex-shrink-0 text-3xl text-indigo-600 mr-4">📖</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">4 Bab Komprehensif: Asas Hingga Lanjutan</h3>
+                        <p class="text-gray-700">
+                            Merangkumi Google My Business, Strategi Media Sosial, Platform E-dagang (Shopee/Lazada), dan Strategi Lanjutan untuk pertumbuhan berterusan bisnes anda.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="flex items-start bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="flex-shrink-0 text-3xl text-indigo-600 mr-4">👨‍💼</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Ditulis Oleh Usahawan Berpengalaman (Hanafi Hassan)</h3>
+                        <p class="text-gray-700">
+                            Berdasarkan pengalaman peribadi dan pembelajaran sebenar dalam membawa perniagaan ke online. Bukan teori kosong, tapi ilmu yang telah terbukti!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="flex items-start bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="flex-shrink-0 text-3xl text-indigo-600 mr-4">🗣️</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Bahasa Santai & Mudah Difahami</h3>
+                        <p class="text-gray-700">
+                            Tiada jargon teknikal yang memeningkan! Ebook ini ditulis dalam bahasa yang mesra, sesuai untuk semua peringkat kemahiran dan memastikan pembelajaran yang menyeronokkan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="flex items-start bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="flex-shrink-0 text-3xl text-indigo-600 mr-4">🛠️</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Langkah Praktikal & Contoh Jelas</h3>
+                        <p class="text-gray-700">
+                            Fokus pada "cara membuat" dengan panduan yang boleh terus diaplikasikan dari awal hingga akhir. Anda akan tahu apa yang perlu dilakukan, serta-merta!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apa Yang Anda Akan Belajar (What You Will Learn - Content Summary) -->
+    <section class="py-16 bg-purple-700 text-white">
+        <div class="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">
+                Intipati Ilmu Digital Yang Anda Akan <span class="text-yellow-300">Kuasai</span>:
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 text-left text-lg">
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-yellow-300 text-2xl mr-3 mt-0.5">✔</span> Asas Google My Business untuk Ditemui Online.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-yellow-300 text-2xl mr-3 mt-0.5">✔</span> Strategi Facebook, TikTok & Instagram untuk Pemasaran.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-yellow-300 text-2xl mr-3 mt-0.5">✔</span> Memanfaatkan WhatsApp Business untuk Jualan & Servis.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-yellow-300 text-2xl mr-3 mt-0.5">✔</span> Panduan Membuka Kedai Online di Shopee/Lazada.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-yellow-300 text-2xl mr-3 mt-0.5">✔</span> Mencipta Katalog Produk di WhatsApp & Kedai Media Sosial.
+                    </li>
+                </ul>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-yellow-300 text-2xl mr-3 mt-0.5">✔</span> Pilihan Membina Website E-dagang Sendiri (Shopify/EasyStore).
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-yellow-300 text-2xl mr-3 mt-0.5">✔</span> Strategi Iklan Berbayar yang Berkesan (Facebook Ads, Google Ads).
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-yellow-300 text-2xl mr-3 mt-0.5">✔</span> Cara Mengumpul & Mengurus Database Pelanggan.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-yellow-300 text-2xl mr-3 mt-0.5">✔</span> Menjaga Hubungan Baik & Kesetiaan Pelanggan Online.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-yellow-300 text-2xl mr-3 mt-0.5">✔</span> Analisis Prestasi & Penambahbaikan Berterusan.
+                    </li>
+                </ul>
+            </div>
+            <p class="mt-12 text-xl font-semibold">
+                Ini adalah panduan <strong class="text-yellow-300">LENGKAP</strong> yang anda perlukan untuk berjaya di era digital!
+            </p>
+        </div>
+    </section>
+
+    <!-- Tentang Penulis (About the Author) -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 text-center max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                Siapa Hanafi Hassan? Pengalaman Di Sebalik Ebook Ini
+            </h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3 flex justify-center">
+                    <img src="https://github.com/xhanafix/ebook-jom-digital/blob/main/images/IMG_20240302_063814.jpg?raw=true" alt="Profil Hanafi Hassan, Usahawan Berpengalaman" class="w-80 h-80 object-cover shadow-lg border-4 border-indigo-200" loading="lazy">
+                </div>
+                <div class="md:w-2/3 text-left space-y-4">
+                    <p class="text-lg text-gray-700">
+                        Hanafi Hassan bukan sekadar penulis, tetapi <strong class="text-indigo-600">seorang usahawan tulen yang memahami denyut nadi perniagaan mikro, kecil, dan sederhana di Malaysia.</strong> Beliau sendiri pernah berada di posisi anda – buntu dan tercari-cari cara untuk membawa bisnes offline beliau ke alam maya.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Melalui <strong class="text-indigo-600">pelbagai percubaan, kesilapan, dan pembelajaran pahit manis</strong>, Hanafi berjaya menempa jalan untuk bisnes beliau berkembang secara digital. Kini, beliau berhasrat untuk berkongsi setiap ilmu dan strategi praktikal yang telah beliau gunakan, agar anda tidak perlu mengulangi kesilapan yang sama.
+                    </p>
+                    <p class="text-lg text-gray-700 font-semibold">
+                        Ebook ini adalah hasil pengalaman sebenar, ditulis dari hati seorang usahawan untuk usahawan seperti anda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pencapaian & Pengiktirafan (Achievements & Recognitions) -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 text-center max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                Pencapaian & <span class="text-indigo-600">Pengiktirafan</span> Hanafi Hassan
+            </h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                Bukti komitmen dan kepakaran dalam pemasaran digital, disahkan oleh Google Skillshop.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+                    <a href="https://skillshop.credential.net/profile/xhanafix/wallet" target="_blank" rel="noopener noreferrer">
+                        <img src="https://raw.githubusercontent.com/xhanafix/jumpstart-digital-presence/main/1.png" alt="Sijil Google Skillshop 1" class="rounded-lg w-full h-auto object-contain">
+                    </a>
+                    <p class="mt-3 text-sm font-medium text-gray-700">Google Digital Marketing</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+                    <a href="https://skillshop.credential.net/profile/xhanafix/wallet" target="_blank" rel="noopener noreferrer">
+                        <img src="https://raw.githubusercontent.com/xhanafix/jumpstart-digital-presence/main/2.png" alt="Sijil Google Skillshop 2" class="rounded-lg w-full h-auto object-contain">
+                    </a>
+                    <p class="mt-3 text-sm font-medium text-gray-700">Google Ads Search</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+                    <a href="https://skillshop.credential.net/profile/xhanafix/wallet" target="_blank" rel="noopener noreferrer">
+                        <img src="https://raw.githubusercontent.com/xhanafix/jumpstart-digital-presence/main/3.png" alt="Sijil Google Skillshop 3" class="rounded-lg w-full h-auto object-contain">
+                    </a>
+                    <p class="mt-3 text-sm font-medium text-gray-700">Google Ads Display</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+                    <a href="https://skillshop.credential.net/profile/xhanafix/wallet" target="_blank" rel="noopener noreferrer">
+                        <img src="https://raw.githubusercontent.com/xhanafix/jumpstart-digital-presence/main/4.png" alt="Sijil Google Skillshop 4" class="rounded-lg w-full h-auto object-contain">
+                    </a>
+                    <p class="mt-3 text-sm font-medium text-gray-700">Google Ads Video</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bukti Sosial / Testimoni (Social Proof/Testimonials) -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                Apa Kata Usahawan Yang Telah <span class="text-purple-600">Membaca Ebook Ini?</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-indigo-600">
+                    <p class="text-lg italic text-gray-800 mb-4">
+                        "Ebook ini memang membuka mata saya! Saya kini lebih yakin untuk memulakan perniagaan online dan tak rasa buntu lagi."
+                    </p>
+                    <p class="font-semibold text-indigo-700">- Encik Ahmad, Pengusaha Nasi Lemak (Perlis)</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-purple-600">
+                    <p class="text-lg italic text-gray-800 mb-4">
+                        "Panduan yang sangat jelas dan mudah diikuti. Akhirnya saya faham bagaimana nak guna media sosial untuk bisnes tanpa rasa takut!"
+                    </p>
+                    <p class="font-semibold text-purple-700">- Puan Aisyah, Butik Pakaian (Johor Bahru)</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-pink-600">
+                    <p class="text-lg italic text-gray-800 mb-4">
+                        "Hanafi Hassan berkongsi ilmu yang sangat bernilai. Dari buntu, kini saya ada hala tuju yang jelas untuk bisnes saya terus maju."
+                    </p>
+                    <p class="font-semibold text-pink-700">- Puan Zaleha, Kedai Runcit (Selangor)</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengendalian Bantahan (Objection Handling) -->
+    <section class="py-16 bg-purple-800 text-white">
+        <div class="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">
+                Mungkin Anda Tertanya-tanya... <span class="text-yellow-300">Kami Ada Jawapannya!</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 text-left">
+
+                <!-- Objection 1 -->
+                <div class="bg-purple-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">"Adakah ini terlalu teknikal untuk saya yang kurang mahir IT?"</h3>
+                    <p class="text-gray-200">
+                        <strong class="text-yellow-300">Tidak sama sekali!</strong> Ebook ini ditulis dalam bahasa santai dan langkah demi langkah. Hanafi Hassan sendiri pernah "buntu" dengan teknologi, jadi beliau tahu cara menyampaikannya agar <strong class="text-yellow-300">sangat mudah difahami dan praktikal</strong>, walau anda baru bermula.
+                    </p>
+                </div>
+
+                <!-- Objection 2 -->
+                <div class="bg-purple-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">"Bolehkah saya belajar semua ini secara percuma di internet, kenapa perlu beli?"</h3>
+                    <p class="text-gray-200">
+                        Anda mungkin boleh. Tapi, berapa banyak masa yang akan anda buang mencari, menyaring, dan menyusun maklumat yang berselerak dan tidak tentu kesahihannya? Ebook ini <strong class="text-yellow-300">menawarkan panduan komprehensif, teruji, dan tersusun rapi dari seorang usahawan sebenar</strong> dalam satu sumber. Ia jimat masa, tenaga, dan wang anda daripada percubaan yang sia-sia.
+                    </p>
+                </div>
+
+                <!-- Objection 3 -->
+                <div class="bg-purple-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">"Saya tak ada masa nak baca ebook panjang-panjang."</h3>
+                    <p class="text-gray-200">
+                        Kami faham! Ebook ini direka untuk usahawan yang sibuk. Ia <strong class="text-yellow-300">fokus pada isi penting, langkah tindakan, dan contoh jelas</strong>. Anda boleh baca mengikut keselesaan anda, dan terus aplikasikan tip-tipnya serta-merta. Setiap bab adalah padat dengan ilmu yang boleh terus digunakan.
+                    </p>
+                </div>
+
+                <!-- Objection 4 -->
+                <div class="bg-purple-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">"Saya dah cuba tapi tak berkesan, adakah ebook ini berbeza?"</h3>
+                    <p class="text-gray-200">
+                        Ya, sangat berbeza! Ebook ini berlandaskan <strong class="text-yellow-300">pengalaman sebenar Hanafi Hassan yang berjaya membawa bisnes beliau online</strong>. Ia menekankan strategi yang telah terbukti berfungsi di pasaran tempatan, bukan sekadar teori. Anda akan mendapat hala tuju yang jelas dan praktikal.
+                    </p>
+                </div>
+
+                <!-- Objection 5 -->
+                <div class="bg-purple-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">"Adakah ini hanya teori kosong?"</h3>
+                    <p class="text-gray-200">
+                        Sama sekali tidak! Setiap bab dipenuhi dengan <strong class="text-yellow-300">"cara membuat" yang jelas dan boleh terus diaplikasikan</strong>. Hanafi Hassan berkongsi apa yang beliau sendiri lakukan untuk mengatasi cabaran dan mengembangkan perniagaannya secara digital. Ini adalah panduan praktikal yang bertukar kepada tindakan!
+                    </p>
+                </div>
+
+                 <!-- Objection 6 -->
+                 <div class="bg-purple-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">"Adakah panduan ini sesuai untuk bisnes saya?"</h3>
+                    <p class="text-gray-200">
+                        Ebook ini direka khas untuk <strong class="text-yellow-300">usahawan mikro, kecil, dan sederhana (PKS)</strong> yang ingin membawa perniagaan offline mereka ke online. Sama ada anda menjual produk fizikal, perkhidmatan, makanan, atau apa sahaja, prinsip dan strategi yang dikongsikan adalah <strong class="text-yellow-300">universal dan boleh diadaptasi</strong> untuk pelbagai jenis bisnes.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Jaminan / Pembalikan Risiko & Final CTA -->
+    <section class="py-16 bg-white text-center">
+        <div class="container mx-auto px-4 sm:px-6 max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+                Pelaburan Kecil, <span class="text-indigo-600">Potensi Pulangan Besar!</span>
+            </h2>
+            <p class="text-xl text-gray-700 mb-8">
+                Bayangkan betapa besarnya potensi pertumbuhan perniagaan anda apabila anda mempunyai panduan yang jelas. Ebook ini adalah <strong class="text-indigo-600">pelaburan sekali seumur hidup untuk ilmu yang akan memberikan pulangan berganda</strong> dalam jualan, jangkauan, dan jenama anda. Jangan biarkan keraguan menghalang anda daripada kejayaan digital yang menanti.
+            </p>
+            <p class="text-2xl font-bold text-purple-700 mb-10">
+                Ambil langkah pertama ke arah masa depan bisnes anda yang lebih cerah <strong class="text-indigo-600">SEKARANG!</strong>
+            </p>
+
+            <!-- Seruan Tindakan Utama (CTA) -->
+            <a href="https://shopee.com.my/your-ebook-link-here" target="_blank" rel="noopener noreferrer" class="cta-button inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-2xl py-5 px-10 rounded-full shadow-xl transform animate-pulse-cta">
+                KLIK UNTUK PEMBELIAN HANYA RM10!
+                <span class="ml-3">🚀</span>
+            </a>
+            <p class="mt-6 text-base text-gray-600">
+                Peringatan: Link ini akan membawa anda terus ke halaman pembelian di Shopee.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4 sm:px-6 text-center text-sm">
+            <p>&copy; 2025 Hanafi Hassan. Hak Cipta Terpelihara. | <a href="#" class="text-indigo-400 hover:text-indigo-300">Polisi Privasi</a> | <a href="#" class="text-indigo-400 hover:text-indigo-300">Terma & Syarat</a></p>
+            <p class="mt-2">Dikuasakan dengan ilmu dan pengalaman.</p>
+        </div>
+    </footer>
+</body>
+</html>
